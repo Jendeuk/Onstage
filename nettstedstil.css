@@ -1,0 +1,410 @@
+/* MOBIL OG PC */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 100%);
+  font-family: sans-serif;
+  }
+
+div.navWrapper {
+  display: block;
+  justify-content: space-between;
+}
+img#pc {
+  display: block;
+  opacity: 0.8;
+}
+#logo{
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+div.navWrapper > a#logo > img {
+  display: block;
+  position: absolute;
+  border-radius: 50% 50% 10% 40%;
+  background-color: rgba(232, 232, 232, 0.8);
+  width: 100px;
+  height: 100px;
+}
+#wrapper {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+/*  KONTAKT OSS*/
+html{
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+/*  MENY */
+nav {
+  position: fixed;
+  background-color: rgba(225, 201, 205, 0.76);
+  width: 100%;
+  z-index: 1;
+}
+#menyen ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+#menyen ul>li {
+  width: 100%;
+  text-align: center;
+  margin-bottom: -1px;
+  border-bottom: 0px solid transparent;
+  transition: border-bottom 0.2s;
+}
+nav#menyen ul>li:hover {
+  border-bottom: 5px solid white;
+}
+nav#menyen ul>li>a {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  padding: 10px 10px 0 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+nav#menyen div#meny_aapen>a>img, nav#menyen div#meny_lukket>a>img {
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+}
+div#meny_aapen img {
+  z-index: 3 !important;
+}
+div#meny_aapen:target {
+  display: initial;
+}
+div#meny_aapen {
+  display: none;
+}
+div#meny_lukket:target ~ div#meny_aapen {
+  display: none;
+}
+div.navWrapper>ul#nav  {
+  display: none;
+}
+div#meny_lukket:target + div.navWrapper>ul#nav  {
+  display: flex;
+}
+/* HEADER */
+header {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Merienda One', cursive;
+  font-size: 60px;
+  padding: 20px;
+  color: black;
+
+}
+header > img {
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  position: relative;
+}
+
+header > div > p{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  padding-bottom: 5px;
+}
+
+img#bildefestival {
+  position: relative;
+  width: 100%;
+}
+img#bildefestival2 {
+  position: absolute;
+  top: 11px;
+  right: 50px;
+  width: 25%;
+}
+main article {
+  position: relative;
+  width: 100%;
+  border: none;
+  height: 600px;
+}
+article#artister {
+  height: auto;
+}
+article#kontaktinfo {
+  height: auto;
+}
+/* INNHOLD */
+div.innhold {
+  background-color: white;
+  height: 90%;
+  padding: 30px;
+  transform: translateY(10%);
+  width: 100%;
+}
+
+div#innholdartister{
+  display: inline-block;
+  width: 100%;
+}
+/* BILDE GALLERY */
+div.bildeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+div.bildeWrapper > img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+div.bildeWrapper > img:last-child {
+  padding-bottom: 50%;
+}
+
+div#innholdkontaktinfo {
+  width: 100%;
+}
+
+ div.title {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* SKJEMA */
+table {
+  width:55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 15px;
+  text-align: left;
+}
+
+table#tabell th{
+  background-color: rgba(225, 201, 205, 0.76);
+  color: black;
+}
+/* FONTS */
+.innholdfonts{
+  font-family: 'Poppins', sans-serif;
+}
+.biletterfonts{
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+
+}
+main > article {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  padding-bottom: 70%;
+}
+article > div.innhold {
+  width: 100%;
+  order: 2;
+}
+article >#biletter >.biletterbutton{
+background-color: #ddd;
+ border: none;
+ color: black;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 16px;
+
+}
+article > div.innholdBilde {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,0);
+  order: 1;
+}
+
+/* KONTAKT OSS */
+.column {
+  width: 100%;
+  display: block;
+}
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  padding: 16px;
+}
+div.icon {
+  text-align: center;
+  padding-bottom: 40%;
+}
+
+div.container > img {
+  width: 150px;
+}
+.titlekontakt {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10px;
+  background-color: rgba(225, 201, 205, 0.76);
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  height: 130px;
+}
+
+/*  MEDIA QUERIES */
+/* PC */
+@media all and (min-width: 1024px) {
+  img#bildefestival {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 100%;
+    z-index: 3;
+  }
+  div.navWrapper>ul#nav {
+    display: flex;
+  }
+  div.navWrapper {
+    display: flex;
+  }
+  #logo{
+    padding-left: 50px;
+  }
+  .column {
+    width: 50%;
+    display: block;
+  }
+
+  /* ICON */
+  div.icon {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  div.icon > p{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px
+  }
+
+  article#kontaktinfo {
+    height: 600px;
+  }
+  nav {
+    background-color: rgba(225, 201, 205, 0.76);
+  }
+  div#meny_lukket:target + ul#nav {
+    display: flex;
+  }
+
+  /* BILDE GALLERY */
+  div.bildeWrapper {
+    display: block
+  }
+  div.bildeWrapper > img {
+    display: inline-block;
+    width: 19%;
+    margin: 0;
+    padding-bottom: 5%;
+  }
+  div.bildeWrapper > img:last-child {
+    padding-bottom: 5%;
+  }
+  #menyen div>a>img {
+    display: none;
+  }
+  #meny_aapen {
+    display: initial;
+  }
+  #menyen ul {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 0px;
+    padding-right: 100px;
+    font-size: 17pt;
+  }
+  #menyen ul>li {
+    margin-bottom: 0px;
+    width: auto;
+  }
+  #menyen ul>li>a {
+    padding: 5px;
+  }
+  main > article {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 0;
+    height: 500px;
+  }
+  article > div.innhold {
+    width: 70%;
+    order: 1;
+  }
+  article > div.innholdBilde {
+    width: 30%;
+    order: 2;
+    height: 500px;
+    background-color: rgba(0,0,0,0);
+  }
+}
