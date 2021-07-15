@@ -1,2 +1,3 @@
 # Hello
-This is my first project, hihi
+My first project
+
